@@ -30,33 +30,3 @@ module.exports = function (string) {
 	} else
 		throw new Error("Invalid ISO 8601 date given.", __filename);
 };
-
-function pad4(n) {
-	if (n < 10)
-		return "000" + n;
-	else if (n < 100)
-		return "00" + n;
-	else if (n < 1000)
-		return "0" + n;
-	else
-		return n;
-}
-
-function pad2(n) {
-	if (n < 10)
-		return "0" + n;
-	else
-		return n;
-}
-
-/**
- * Returns an ISO 8061 formatted date string.
- */
-Date.prototype.toISO8061 = function () {
-	return pad4(this.getUTCFullYear()) + "-"
-			+ pad2(this.getUTCMonth() + 1) + "-"
-			+ pad2(this.getUTCDate()) + "T"
-			+ pad2(this.getUTCHours()) + ":"
-			+ pad2(this.getUTCMinutes()) + ":"
-			+ pad2(this.getUTCSeconds()) + "Z";
-};

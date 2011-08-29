@@ -12,9 +12,8 @@ console.log(date);
 
 // Write current date as ISO 8061 string.
 date = new Date();
-console.log(date.toISO8061());
+console.log(date.toISOString());
 ```
 
 It's also able to parse strings with timezones like in
-`2011-08-20T19:44:05+01:00` but `toISO8061()` always writes to _Z_ timezone
-(GMT +00:00).
+`2011-08-20T19:44:05+01:00`.
