@@ -2,7 +2,7 @@
 	"author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
 	"name": "isodate",
 	"description": "ISO 8061 date/time parser",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/pvorb/node-isodate.git"
