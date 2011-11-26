@@ -2,13 +2,13 @@
   "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
   "name": "isodate",
   "description": "JavaScript ISO 8061 date/time parser",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-isodate.git"
   },
-  "main": "isodate.js",
-  "ender": "isodate.js",
+  "main": "./isodate.js",
+  "ender": "./ender.js",
   "engines": {
     "node": "*"
   },
