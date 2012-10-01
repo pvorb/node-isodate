@@ -8,7 +8,6 @@
     "url": "git://github.com/pvorb/node-isodate.git"
   },
   "main": "./isodate.js",
-  "ender": "./ender.js",
   "engines": {
     "node": "*"
   },
