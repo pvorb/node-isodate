@@ -2,7 +2,7 @@
   "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
   "name": "isodate",
   "description": "JavaScript ISO 8601 date/time parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-isodate.git"
@@ -11,7 +11,12 @@
   "engines": {
     "node": "*"
   },
-  "tags": [ "date", "time", "parse", "ISO 8601" ],
+  "tags": [
+    "date",
+    "time",
+    "parse",
+    "ISO 8601"
+  ],
   "bugs": {
     "url": "https://github.com/pvorb/node-isodate/issues"
   }
