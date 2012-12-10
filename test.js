@@ -5,6 +5,11 @@ var datestring = "2011-08-18T19:03:37+01:00";
 console.log("Parsing: " + datestring);
 console.log("Result: " + ISODate(datestring) + "\n");
 
+// Parse ISO date string without delimiters
+var datestring = "20110818T190337+0100";
+console.log("Parsing: " + datestring);
+console.log("Result: " + ISODate(datestring) + "\n");
+
 // Writing current time
 console.log("Parsing current time.");
 var date = new Date();
