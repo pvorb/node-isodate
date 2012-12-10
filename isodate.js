@@ -5,7 +5,7 @@ module.exports = function (string) {
     var match;
 	if (typeof string.getTime === "function")
 		return string;
-	else if (match = string.match(/^(\d{4})(-(\d{2})(-(\d{2})(T(\d{2}):(\d{2})(:(\d{2})(\.(\d+))?)?(Z|((\+|-)(\d{2}):(\d{2}))))?)?)?$/)) {
+	else if (match = string.match(/^(\d{4})(-?(\d{2})(-?(\d{2})(T(\d{2}):?(\d{2})(:?(\d{2})(\.(\d+))?)?(Z|((\+|-)(\d{2}):?(\d{2}))))?)?)?$/)) {
 		var date = new Date();
 		date.setUTCFullYear(Number(match[1]));
 		date.setUTCMonth(Number(match[3]) - 1 || 0);
