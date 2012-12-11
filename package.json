@@ -1,7 +1,7 @@
 {
   "name": "isodate",
   "description": "JavaScript ISO 8601 date/time parser",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-isodate.git"
