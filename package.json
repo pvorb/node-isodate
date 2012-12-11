@@ -1,5 +1,4 @@
 {
-  "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
   "name": "isodate",
   "description": "JavaScript ISO 8601 date/time parser",
   "version": "0.1.1",
@@ -8,6 +7,11 @@
     "url": "git://github.com/pvorb/node-isodate.git"
   },
   "main": "./isodate.js",
+  "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de)",
+  "contributors": [
+    "David Henderson",
+    "Tyson Stewart"
+  ],
   "engines": {
     "node": "*"
   },
