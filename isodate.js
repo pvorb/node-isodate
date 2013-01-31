@@ -8,7 +8,7 @@ module.exports = function (string) {
 	else if (match = string.match(/^(\d{4})(-?(\d{2})(-?(\d{2})(T(\d{2}):?(\d{2})(:?(\d{2})(\.(\d+))?)?(Z|((\+|-)(\d{2}):?(\d{2}))))?)?)?$/)) {
 		var date = new Date(
 		    Number(match[1]), // year
-		    Number(match[3]) - 1 || 0, // month
+		    (Number(match[3]) - 1) || 0, // month
 		    Number(match[5]) || 0, // day
 		    Number(match[7]) || 0, // hour
 		    Number(match[8]) || 0, // minute
@@ -26,7 +26,7 @@ module.exports = function (string) {
 			if (match[15] == "+")
 				offset = -offset;
 
-			date = new Date(date.valueOf() + offset);
+			date = new Date(date.valueOf() - offset);
 		}
 
 		return date;
