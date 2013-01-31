@@ -6,7 +6,11 @@ console.log("Parsing: " + datestring);
 console.log("Result: " + ISODate(datestring) + "\n");
 
 // Parse ISO date string without delimiters
-var datestring = "20110818T190337+0100";
+datestring = "20110818T190337+0100";
+console.log("Parsing: " + datestring);
+console.log("Result: " + ISODate(datestring) + "\n");
+
+datestring = "2011-04-16T00:00:00Z";
 console.log("Parsing: " + datestring);
 console.log("Result: " + ISODate(datestring) + "\n");
 
